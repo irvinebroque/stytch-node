@@ -1,0 +1,39 @@
+{
+    "name": "Ruby",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "settings": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+      ],
+      "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll": true,
+          "source.fixAll.eslint": true
+        },
+        "editor.formatOnSave": true
+      },
+      "javascript.format.enable": false,
+      "git.enableCommitSigning": true,
+      "git.autofetch": true,
+      "terminal.integrated.tabs.title": "${task}",
+      "terminal.integrated.tabs.description": "${task}${separator}${local}${separator}${cwdFolder}"
+    },
+    "extensions": [
+      "ms-azuretools.vscode-docker",
+      "esbenp.prettier-vscode",
+      "GitHub.copilot",
+      "bungcip.better-toml",
+      "dbaeumer.vscode-eslint",
+      "editorconfig.editorconfig"
+    ],
+    "postCreateCommand": "npm install",
+    "remoteUser": "vscode"
+  }
+  
